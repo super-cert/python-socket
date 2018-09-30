@@ -53,8 +53,7 @@ if recvsecond[:3].decode() != '220':
 
 tlssocket = ssl.wrap_socket(clientSocket)
 
-username = "kjh07df@gmail.com"
-password = "xkdtn6@@"
+
 base64_str = ("\x00"+username+"\x00"+password).encode()
 base64_str = base64.b64encode(base64_str)
 
